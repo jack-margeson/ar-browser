@@ -6,11 +6,11 @@
   <body style='margin : 0px; overflow: hidden;'>
     <a-scene embedded arjs>
       <a-assets>
-        <video id="video" src="assets/videos/water.mp4" autoplay="true">
+        <video id="video" src="water.mp4" autoplay="true">
       </a-assets>
 
-      <a-entity geometry="primitive: box" material="opacity: 0.5; color: red;"></a-entity>
-      <a-marker-camera type='pattern' url='assets/patterns/heart.patt'></a-marker-camera>
+      <a-entity geometry="primitive: box" material="src: #video; opacity: 0.5;"></a-entity>
+      <a-marker-camera type='pattern' url='heart.patt'></a-marker-camera>
     </a-scene>
   </body>
 </html>
