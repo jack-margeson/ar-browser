@@ -7,7 +7,12 @@
 
   <body style='margin : 0px; overflow: hidden;'>
     <a-scene embedded arjs>
-      <a-entity geometry="primitive: box" material="src: #video; opacity: 0.5;"></a-entity>
+      <!-- Create a new a-entity, text box. -->
+      <a-entity 
+        geometry="primitive: box" 
+        material="color: blue; opacity: 0.5;">
+      </a-entity>
+      <!-- Initilize the camera that searches for the pattern marker specified. -->
       <a-marker-camera type='pattern' url='pattern.patt'></a-marker-camera>
     </a-scene>
   </body>
